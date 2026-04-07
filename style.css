@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #FFD93D, #FF9A00); /* gradasi oranye cerah */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(255, 122, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #ff6b00;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FF9A00; /* oranye cerah */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: 1px solid #ffd1b3; /* outline lembut oranye */
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+  background-color: #fff9f4;
+}
+
+.form-group input:focus {
+  border-color: #FF9A00;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 154, 0, 0.15);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #FF9A00, #FF6B00);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #FFA926, #FF7C1A);
+  transform: translateY(-2px);
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ff6b00;
+}
+
+.toggle a {
+  color: #FF9A00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.toggle a:hover {
+  text-decoration: underline;
+}
