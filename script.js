@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginForm');
   const showLogin = document.getElementById('showLogin');
   const showRegister = document.getElementById('showRegister');
-
+  // Test
   // Toggle form
   showLogin.addEventListener('click', (e) => {
     e.preventDefault();
